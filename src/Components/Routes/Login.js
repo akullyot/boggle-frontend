@@ -102,7 +102,7 @@ export default function Login() {
                 <Button variant="outline-light" size="lg" type="submit" className="mb-5">
                     Submit
                 </Button>
-                <HashLink className='mb-5' id='contact' to='/signUp/#' > New to Boggle? Sign Up for an account. </HashLink>
+                <HashLink className='mb-5' id='contact' to='boggle-frontend/signUp/' > New to Boggle? Sign Up for an account. </HashLink>
             </Form>
         </main>
     );
