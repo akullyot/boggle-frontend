@@ -30,7 +30,7 @@ export default function Login() {
             };
             setValidated(true);
             e.preventDefault();
-            const response = await fetch(`http://localhost:5000/authentication/`, {
+            const response = await fetch(`${process.env.REACT_APP_NODE_SERVER_URL}/authentication/`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -41,7 +41,7 @@ export default function Login() {
             if (response.status === 200) {
                 setCurrentUser(data.user)
                 localStorage.setItem('token', data.token);
-                navigate(`/`);
+                navigate(`boggle-frontend/`);
             } else {
                 setLoginErrorToastShow(true)
                 setErrorMessage(data.message);
