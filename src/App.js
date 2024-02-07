@@ -20,7 +20,7 @@ import Navbar     from './Components/Navbar'
 function App() {
   return (
     <CurrentUserProvider>
-      <Router>
+      <Router basename='/'>
         <Navbar/>
         <div id = 'mainHolder'>
           <Routes>
