@@ -253,11 +253,11 @@
 }
 #boggleGameArea #gamePlayerArea {
   width: 75vw;
-  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transform: scale(0.8);
 }
 #boggleGameArea #gamePlayerArea #timer {
   height: 6vh;
@@ -506,7 +506,6 @@
   font-family: Poppins, sans-serif;
   background-color: rgb(68, 69, 75);
   min-height: 100vh;
-  transform: scale(0.8);
 }
 
 #mainHolder {
