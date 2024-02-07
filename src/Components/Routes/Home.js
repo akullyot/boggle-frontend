@@ -29,7 +29,7 @@ export default function Home () {
         <main>
             <h1> Welcome to Boggle</h1>
             {data}
-            <p>Server test</pe>
+            <p>Server test</p>
         </main>
     )
 }
