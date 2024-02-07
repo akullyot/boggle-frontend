@@ -30,7 +30,7 @@ export default function Login() {
             };
             setValidated(true);
             e.preventDefault();
-            const response = await fetch(`${process.env.REACT_APP_NODE_SERVER_URL}/authentication/`, {
+            const response = await fetch(`authentication/`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -102,7 +102,7 @@ export default function Login() {
                 <Button variant="outline-light" size="lg" type="submit" className="mb-5">
                     Submit
                 </Button>
-                <HashLink className='mb-5' id='contact' to='boggle-frontend/signUp/' > New to Boggle? Sign Up for an account. </HashLink>
+                <HashLink className='mb-5' id='contact' to='signUp/' > New to Boggle? Sign Up for an account. </HashLink>
             </Form>
         </main>
     );
