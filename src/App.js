@@ -24,19 +24,19 @@ function App() {
         <Navbar/>
         <div id = 'mainHolder'>
           <Routes>
-            <Route exact path="/boggle-frontend/" element={<Home/>} />
+            <Route exact path="/" element={<Home/>} />
             {/*Paths pertaining to browsing all users and looking at their results*/}
-            <Route exact path="/boggle-frontend/leaderboards" element={<LeaderBoards/>} />
-            <Route exact path="/boggle-frontend/users" element={<BrowseUsers/>} />
+            <Route exact path="/leaderboards" element={<LeaderBoards/>} />
+            <Route exact path="/users" element={<BrowseUsers/>} />
             {/* Paths pertaining to logging in and signing up */}
-            <Route exact path="/boggle-frontend/signup" element={<SignUp/>} />
-            <Route exact path="/boggle-frontenf/login" element={<Login/>} />
+            <Route exact path="/signup" element={<SignUp/>} />
+            <Route exact path="/login" element={<Login/>} />
             {/* Paths pertaining to user profile */}
             {/*Paths pertaining to multiplayer*/}
-            <Route exact path="/boggle-frontend/createRoom" element={<CreateRoom/>} />
-            <Route exact path="boggle-frontend/joinroom/:roomId" element={<JoinRoom/>} />
+            <Route exact path="/createRoom" element={<CreateRoom/>} />
+            <Route exact path="/joinroom/:roomId" element={<JoinRoom/>} />
 
-            <Route path="/boggle-frontend" element={Error404} />
+            <Route path="/" element={Error404} />
           </Routes>
         </div>
       </Router>
