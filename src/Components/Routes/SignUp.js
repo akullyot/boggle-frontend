@@ -54,7 +54,7 @@ export default function SignUp() {
                 //Now we need to get our token 
                 setCurrentUser(data.user)
                 localStorage.setItem('token', data.token);
-                navigate(`boggle-frontend/`);
+                navigate(`/`);
             } else {
                 //there was an error, show the toast message
                 setErrorToastShow(true)
