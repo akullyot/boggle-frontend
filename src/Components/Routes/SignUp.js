@@ -42,7 +42,7 @@ export default function SignUp() {
                 throw 'invalid input'
             }
             setValidated(true);
-            const response = await fetch(`users/`, {
+            const response = await fetch(`https://boggle-backend-413ebb7ed653.herokuapp.com/users/`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

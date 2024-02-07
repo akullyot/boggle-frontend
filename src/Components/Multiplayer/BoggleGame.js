@@ -66,7 +66,7 @@ export default function BoggleGame ({socket, roomId, seed, boardMatrix, setBoard
         //while we are at it get the answers
         const findAllWordsAPICall = async () => {
           console.log(process.env.REACT_APP_NODE_SERVER_URL)  
-          const response = await fetch(`${process.env.REACT_APP_NODE_SERVER_URL}/games/findallwords`,{
+          const response = await fetch(`https://boggle-backend-413ebb7ed653.herokuapp.com/games/findallwords`,{
                 method: 'POST',
                 headers: {
                     'authorization': `Bearer ${localStorage.getItem('token')}`,

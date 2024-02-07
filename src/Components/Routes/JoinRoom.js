@@ -99,7 +99,7 @@ export default function JoinRoom (){
                         turnOnAutoCheck: roomData.isAutocheck
                     })
                     //Now go over to the backend and generate your board
-                    const response = await fetch(`${process.env.REACT_APP_NODE_SERVER_URL}/games/joinGame`, {
+                    const response = await fetch(`https://boggle-backend-413ebb7ed653.herokuapp.com/games/joinGame`, {
                         method: 'POST',
                         headers: {
                             'authorization': `Bearer ${localStorage.getItem('token')}`,

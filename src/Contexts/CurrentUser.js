@@ -7,7 +7,7 @@ function CurrentUserProvider({ children }){
     const [currentUser, setCurrentUser] = useState(null)
     useEffect(() => {
         const getLoggedInUser = async () => {
-            let response = await fetch(`/authentication/profile`, {
+            let response = await fetch(`https://boggle-backend-413ebb7ed653.herokuapp.com/authentication/profile`, {
                 headers: {
                     'Authorization' : `Bearer ${localStorage.getItem('token')}`
                 }

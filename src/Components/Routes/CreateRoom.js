@@ -146,7 +146,7 @@ useEffect(() => {
           if (!currentUser){
             throw 'you must be logged in first before creating a room'
           }
-          const response = await fetch(`${process.env.REACT_APP_NODE_SERVER_URL}/games/newgame`, {
+          const response = await fetch(`https://boggle-backend-413ebb7ed653.herokuapp.com/games/newgame`, {
             method: 'POST',
             headers: {
                 'authorization': `Bearer ${localStorage.getItem('token')}`,

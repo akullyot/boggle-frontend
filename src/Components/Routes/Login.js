@@ -30,7 +30,7 @@ export default function Login() {
             };
             setValidated(true);
             e.preventDefault();
-            const response = await fetch(`authentication/`, {
+            const response = await fetch(`https://boggle-backend-413ebb7ed653.herokuapp.com/authentication/`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
