@@ -506,6 +506,7 @@
   font-family: Poppins, sans-serif;
   background-color: rgb(68, 69, 75);
   min-height: 100vh;
+  transform: scale(0.8);
 }
 
 #mainHolder {

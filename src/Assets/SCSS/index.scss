@@ -17,6 +17,7 @@
     font-family: vars.$sansFont;
     background-color: vars.$backgroundColor;
     min-height: 100vh;
+    transform: scale(0.8);
 }
 #mainHolder{
     background-color: vars.$backgroundColor;
