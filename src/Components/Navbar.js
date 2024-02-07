@@ -31,13 +31,13 @@ export default function Navigationbar() {
         setLogoutToastShow(true)
     }
     const handleSignInRedirect = () => {
-        navigate('/boggle-frontend/login')
+        navigate('/login')
     }
     //ALL BUTTONS
     // Handling joing multiplayer rooms directly from the nav
     const handleDirectRoomJoin = (e) => {
         e.preventDefault();
-        navigate('/boggle-frontend/joinroom/' + roomIdInput);
+        navigate('/joinroom/' + roomIdInput);
     };
 
     //ALL TOASTS
@@ -80,7 +80,7 @@ export default function Navigationbar() {
     <>
         <Navbar className="bg-body-tertiary" bg="dark" data-bs-theme="dark" collapseOnSelect expand="lg">
             <Container>
-                <Navbar.Brand href="/boggle-frontend/" className="me-5">
+                <Navbar.Brand href="/" className="me-5">
                     <img
                         alt=""
                         src={logo}
@@ -99,8 +99,8 @@ export default function Navigationbar() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="boggle-frontend/leaderboards">Leaderboards</Nav.Link>
-                        <Nav.Link href="boggle-frontend/users"> Browse Users </Nav.Link>
+                        <Nav.Link href="/leaderboards">Leaderboards</Nav.Link>
+                        <Nav.Link href="/users"> Browse Users </Nav.Link>
                         
                         <NavDropdown title="Single Player" id="collapsible-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">Play a Standard Boggle Game</NavDropdown.Item>
@@ -113,7 +113,7 @@ export default function Navigationbar() {
                         </NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="Multi Player" id="collapsible-nav-dropdown">
-                        <NavDropdown.Item href="/boggle-frontend/createRoom"> Create a Room </NavDropdown.Item>
+                        <NavDropdown.Item href="/createRoom"> Create a Room </NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.4">
                             Browse all publically available rooms
                         </NavDropdown.Item>
