@@ -42,7 +42,7 @@ export default function SignUp() {
                 throw 'invalid input'
             }
             setValidated(true);
-            const response = await fetch(`${process.env.REACT_APP_NODE_SERVER_URL}/users/`, {
+            const response = await fetch(`users/`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
